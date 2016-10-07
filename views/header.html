@@ -5,38 +5,4 @@
     <div class="search-bar">
         <input type="text" class="form-control " placeholder="Search...">
     </div>
-    <div class="acc-settings">
-
-    </div>
-    <div class="top-nav">
-    	<ul class="nav right pull-right list-unstyled">
-    	<li data-ng-if="isAuthenticated()" class="dropdown text-normal nav-profile" dropdown
-                is-open="status.isopenProfile">
-                <a href="javascript:;" class="dropdown-toggle" dropdown-toggle ng-disabled="disabled">
-                    <img ng-src="{{$storage.user.avatar_url}}" alt="" class="img-circle img30_30">
-                    <span class="hidden-xs">
-                        <span data-i18n="">{{ $storage.user.user_name}}</span>
-                    </span>
-                </a>
-                <ul class="dropdown-menu pull-right">
-                    <li>
-                        <a href="#/logout">
-                            <i class="fa fa-sign-out"></i>
-                            <span ></span>
-                        </a>
-                    </li>
-                </ul>
-            </li>
-            <li data-ng-if="!isAuthenticated()" class="dropdown text-normal nav-profile" dropdown
-                is-open="status.isopenProfile">
-                <a href="#/login" dropdown-toggle ng-disabled="disabled">
-                    <img src="images/g1.jpg" alt="" class="img-circle img30_30">
-                    <span class="hidden-xs">
-                        <span ></span>
-                    </span>
-                </a>
-
-            </li>
-    	</ul>
-    </div>
 </div>

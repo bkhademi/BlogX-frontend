@@ -3,7 +3,7 @@
  */
  var blogX = angular.module('blogX', ['ngRoute', 'satellizer', 'toastr','ngStorage', 'ui.bootstrap'
  	]);
- blogX.constant("API_URL","http://localhost:8000/api/")
+ blogX.constant("API_URL","http://52.87.172.119:9000/api/");
  blogX.config(function ($authProvider, API_URL) {
   //Reset headers to avoid OPTIONS request (aka preflight)
   $authProvider.baseUrl = API_URL;
@@ -33,4 +33,4 @@
 				});
 		};
  	
- }])
+ }]);

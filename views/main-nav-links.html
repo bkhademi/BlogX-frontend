@@ -1,8 +1,33 @@
 <div id="main-nav-links" class="text-center">
     <a>Home</a>
-    <a>Trending</a>
+    <div class="dropdown-custom">
+        <a>Trending</a>
+        <div id="dropdown-content">
+            <a href="#">Most Viewed</a>
+            <a href="#">Most Shared</a>
+            <a href="#">Most Commented</a>
+        </div>
+    </div>
     <a>World</a>
-    <a>Politics</a>
-    <a>Sports</a>
+    <div class="dropdown-custom">
+        <a>Politics</a>
+        <div id="dropdown-content">
+            <a href="#">2016 Elections</a>
+            <a href="#">Washington</a>
+            <a href="#">Nation</a>
+            <a href="#">World</a>
+        </div>
+    </div>
+    <div class="dropdown-custom">
+        <a>Sports</a>
+        <div id="dropdown-content">
+            <a href="#">Soccer</a>
+            <a href="#">NFL</a>
+            <a href="#">NBA</a>
+        </div>
+    </div>
     <a>Technology</a>
+    <a ng-if="isAuthenticated()" data-ng-click="logout()"> Logout </a>
+    <a ng-if="!isAuthenticated()" href="#/login"> Login</a>
 </div>
+

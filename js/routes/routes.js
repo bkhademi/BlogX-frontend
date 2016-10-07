@@ -7,8 +7,11 @@ blogX.config(['$routeProvider', function ($routeProvider) {
             templateUrl: 'views/home.html',
             controller: 'HomeCtrl'
         })
-
+        .when('/login',{
+        	templateUrl:'views/login.html',
+        	controller:'LoginCtrl'
+        })
         .otherwise({
-            templateUrl: 'views/home.html'
+            redirectTo: '/home'
         })
 }]);
